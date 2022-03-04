@@ -4,11 +4,11 @@ on: [push]
 
 jobs:
   run-shell-command:
-  steps:
-    - name: echo a string
-      run: echo "hello dude"
-    - name: multiline string
-      run: |
-        node -v
-        npm -v
-        
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a string
+        run: echo "hello dude"
+      - name: multiline string
+        run: |
+          node -v
+          npm -v
